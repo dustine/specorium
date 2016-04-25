@@ -14,7 +14,7 @@ build
 .gradle
 
 # other
+classes
 eclipse
 run
-/src/main/resources/assets/specorium/textures/items/ascended_ingot_full.pdn
-/src/main/resources/assets/specorium/textures/items/ascended_ingot.pdn
+*.pdn
