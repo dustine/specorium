@@ -1,10 +1,10 @@
 package desutine.specorium.client.color;
 
-import desutine.specorium.Reference;
+import desutine.specorium.reference.Reference;
 import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.item.ItemStack;
 
-public class ColorTaintedSpecorium implements IItemColor {
+public class ColorToastedSpecorium implements IItemColor {
 
     @Override
     public int getColorFromItemstack(ItemStack stack, int tintIndex) {

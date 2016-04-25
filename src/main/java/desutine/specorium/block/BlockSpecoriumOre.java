@@ -23,7 +23,9 @@ public class BlockSpecoriumOre extends BlockOre {
 
     public BlockSpecoriumOre() {
         super();
-        setLightLevel(14.0f / 15.0f);
+        setLightLevel(9.0f / 15.0f);
+        setHarvestLevel("pickaxe", 2);
+        setHardness(5);
         setDefaultState(getDefaultState()
                 .withProperty(WORLD, EnumWorld.OVERWORLD));
     }

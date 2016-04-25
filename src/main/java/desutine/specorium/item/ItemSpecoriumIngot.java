@@ -1,5 +1,6 @@
 package desutine.specorium.item;
 
+import desutine.specorium.reference.EnumColors;
 import desutine.specorium.registry.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -17,15 +18,14 @@ public class ItemSpecoriumIngot extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubItems(Item itemIn, CreativeTabs tab, List<ItemStack> subItems) {
-//        super.getSubItems(itemIn, tab, subItems);
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 0)); // Red
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 1)); // Orange
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 2)); // Yellow
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 3)); // Green
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 4)); // Cyan
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 5)); // Blue
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 6)); // Indigo
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 7)); // White
-        subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, 8)); // Black
+        for (EnumColors color : EnumColors.values()) {
+            subItems.add(new ItemStack(ModItems.SPECORIUM_INGOT, 1, color.ordinal()));
+        }
+    }
+
+    @Override
+    public String getUnlocalizedName(ItemStack stack) {
+        return super.getUnlocalizedName(stack) + '.' + EnumColors.values()[stack.getMetadata()].getName();
     }
 }
+

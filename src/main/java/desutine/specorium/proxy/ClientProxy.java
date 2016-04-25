@@ -1,7 +1,7 @@
 package desutine.specorium.proxy;
 
 import desutine.specorium.client.color.ColorSpecorium;
-import desutine.specorium.client.color.ColorTaintedSpecorium;
+import desutine.specorium.client.color.ColorToastedSpecorium;
 import desutine.specorium.registry.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -40,6 +40,6 @@ public class ClientProxy extends Proxy {
 
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ColorSpecorium(), ModItems.SPECORIUM_NUGGET);
         Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ColorSpecorium(), ModItems.SPECORIUM_INGOT);
-        Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ColorTaintedSpecorium(), ModItems.SPECORIUM_TAINTED_INGOT);
+        Minecraft.getMinecraft().getItemColors().registerItemColorHandler(new ColorToastedSpecorium(), ModItems.SPECORIUM_TAINTED_INGOT);
     }
 }

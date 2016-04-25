@@ -1,6 +1,7 @@
 package desutine.specorium;
 
 import desutine.specorium.proxy.Proxy;
+import desutine.specorium.reference.Reference;
 import desutine.specorium.registry.ModBlocks;
 import desutine.specorium.registry.ModItems;
 import desutine.specorium.registry.ModRecipes;

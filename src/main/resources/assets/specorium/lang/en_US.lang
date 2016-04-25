@@ -1,2 +1,28 @@
 tile.oreSpecorium.name=Specorium Ore
-tile.nuggetSpecorium.name=Specorium Nugget
+
+tile.ascendedSpecorium.name=Ascended Specorium
+
+item.nuggetSpecorium.red.name=Red Specorium Nugget
+item.nuggetSpecorium.orange.name=Orange Specorium Nugget
+item.nuggetSpecorium.yellow.name=Yellow Specorium Nugget
+item.nuggetSpecorium.green.name=Green Specorium Nugget
+item.nuggetSpecorium.cyan.name=Cyan Specorium Nugget
+item.nuggetSpecorium.blue.name=Blue Specorium Nugget
+item.nuggetSpecorium.purple.name=Purple Specorium Nugget
+item.nuggetSpecorium.white.name=White Specorium Nugget
+item.nuggetSpecorium.black.name=Black Specorium Nugget
+item.ingotSpecorium.red.name=Red Specorium Ingot
+
+item.ingotSpecorium.orange.name=Orange Specorium Ingot
+item.ingotSpecorium.yellow.name=Yellow Specorium Ingot
+item.ingotSpecorium.green.name=Green Specorium Ingot
+item.ingotSpecorium.cyan.name=Cyan Specorium Ingot
+item.ingotSpecorium.blue.name=Blue Specorium Ingot
+item.ingotSpecorium.purple.name=Purple Specorium Ingot
+item.ingotSpecorium.white.name=White Specorium Ingot
+item.ingotSpecorium.black.name=Black Specorium Ingot
+
+item.ingotToastedSpecorium.name=Toasted Specorium Ingot
+
+item.ingotAscendedSpecorium.name=Ascended Specorium Ingot
+

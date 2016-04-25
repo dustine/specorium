@@ -1,6 +1,6 @@
 package desutine.specorium.client.color;
 
-import desutine.specorium.Reference;
+import desutine.specorium.reference.Reference;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.color.IBlockColor;
@@ -8,6 +8,8 @@ import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+
+import java.awt.*;
 
 public class ColorSpecorium implements IItemColor, IBlockColor {
     @Override
@@ -47,14 +49,14 @@ public class ColorSpecorium implements IItemColor, IBlockColor {
                 return -1;
         }
 
-        double timeFrame = ((double) (Minecraft.getMinecraft().theWorld.getTotalWorldTime() % (20 * 10))) / (20 * 10 * 2) + 0.5;
-//        if(timeFrame > 1) timeFrame = 2 - timeFrame;
+        double timeFrame = ((double) (Minecraft.getMinecraft().theWorld.getTotalWorldTime() % (20 * 2))) / (20 * 2) * 2 * Math.PI;
+        timeFrame = Math.sin(timeFrame);
+        timeFrame = (1 + timeFrame) / 8 + 0.75;
 
-        return (int) (intColor * timeFrame);
-//        return intColor;
+        final Color color = new Color(intColor);
+        final float[] hsb = Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), null);
+        return Color.HSBtoRGB(hsb[0], hsb[1], (float) (hsb[2] * timeFrame));
 
-//        final Color color = new Color((int) (intColor * timeFrame));
-//        return color.getRGB();
     }
 
     @Override

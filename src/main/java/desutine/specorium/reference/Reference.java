@@ -1,10 +1,10 @@
-package desutine.specorium;
+package desutine.specorium.reference;
 
 public class Reference {
-    static final String MODID = "specorium";
-    static final String SERVER_PROXY = "desutine.specorium.proxy.Proxy";
-    static final String CLIENT_PROXY = "desutine.specorium.proxy.ClientProxy";
-    final static String VERSION = "@VERSION@";
+    public static final String MODID = "specorium";
+    public static final String SERVER_PROXY = "desutine.specorium.proxy.Proxy";
+    public static final String CLIENT_PROXY = "desutine.specorium.proxy.ClientProxy";
+    public final static String VERSION = "@VERSION@";
 
     public class Names {
         public static final String SPECORIUM_ORE = "oreSpecorium";
@@ -12,6 +12,7 @@ public class Reference {
         public static final String SPECORIUM_INGOT = "ingotSpecorium";
         public static final String SPECORIUM_ASCENDED_INGOT = "ingotAscendedSpecorium";
         public static final String SPECORIUM_TAINTED_INGOT = "ingotTaintedSpecorium";
+        public static final String ASCENDED_SPECORIUM = "ascendedSpecorium";
     }
 
     public class Color {
