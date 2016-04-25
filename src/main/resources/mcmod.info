@@ -1,16 +1,16 @@
 [
   {
-    "modid": "examplemod",
-    "name": "Example Mod",
-    "description": "Example placeholder mod.",
+    "modid": "specorium",
+    "name": "Specorium",
+    "description": "Adds an awesome metal.",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "",
     "updateUrl": "",
     "authorList": [
-      "ExampleDude"
+      "Desutine"
     ],
-    "credits": "The Forge and FML guys, for making this example",
+    "credits": "Spec @ EiraNet",
     "logoFile": "",
     "screenshots": [],
     "dependencies": []
