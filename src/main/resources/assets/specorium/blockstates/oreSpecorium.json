@@ -1,0 +1,27 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "specorium:blocks/ore"
+    },
+    "model": "cube_all"
+  },
+  "variants": {
+    "normal": [
+      {}
+    ],
+    "world": {
+      "overworld": {},
+      "nether": {
+        "textures": {
+          "all": "specorium:blocks/ore_nether"
+        }
+      },
+      "end": {
+        "textures": {
+          "all": "specorium:blocks/ore_end"
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,5 @@
 # eclipse
 bin
-*.launch
-.settings
-.metadata
 .classpath
 .project
 
@@ -10,7 +7,6 @@ bin
 out
 *.ipr
 *.iws
-*.iml
 .idea
 
 # gradle
@@ -20,3 +16,5 @@ build
 # other
 eclipse
 run
+/src/main/resources/assets/specorium/textures/items/ascended_ingot_full.pdn
+/src/main/resources/assets/specorium/textures/items/ascended_ingot.pdn
